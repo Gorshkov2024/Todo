@@ -1,7 +1,6 @@
 class Todo:
     def __init__(self): # Конструктор класса Todo (добавляет словарь дел и счетчики).
-        self.issue = {} # Словарь дел
-        self.transfer_issue = {} # Словарь перенесенных дел
+        self.issue = {}
         self.count = 0
         self.__count_no_complete = 0
         self.__count_transfer = 0
@@ -87,15 +86,4 @@ todo = Todo()
 todo.add_issue("zavtrak", "8:30", False,False)             
 todo.add_issue("uborka", "10:30", False,False)             
 todo.add_issue("kopm_kot", "12:30", False,False)    
-
-todo.change_issue("zavtrak")
-todo.change_transfer("uborka")
-todo.change_issue("kopm_kot")
-todo.show()
-
-
-
-
-
-
-
+todo.show()     
